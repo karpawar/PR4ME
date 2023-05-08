@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>PR4ME</title>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
+      min-width: 370px;
+      padding: 8px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .input-wrapper {
+      min-width: 260px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #262626;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      box-sizing: border-box;
+      background-color: #444;
+      color: #fff;
+      transition: all 0.2s ease;
+    }
+
+    input[type="text"]:focus {
+      outline: none;
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    }
+
+    button[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+
+    input[type="text"]::placeholder {
+      color: #ccc;
+    }
+
+    ::-webkit-input-placeholder {
+      color: #ccc;
+    }
+
+    ::-moz-placeholder {
+      color: #ccc;
+    }
+
+    :-ms-input-placeholder {
+      color: #ccc;
+    }
+  </style>
+  <script src="popup.js"></script>
+</head>
+
+<body>
+  <h1>PR4ME</h1>
+  <form id="myForm">
+    <div class="input-wrapper">
+      <label for="baseBranch">Base:</label>
+      <input type="text" id="baseBranch" placeholder="Enter your base branch...">
+    </div>
+    <div class="input-wrapper">
+      <label for="compareBranch">Compare:</label>
+      <input type="text" id="compareBranch" placeholder="Enter your compare branch...">
+    </div>
+    <div class="input-wrapper">
+      <label for="repoLink">Repository Links:</label>
+      <input type="text" id="repoLink" placeholder="Comma separated repository links">
+    </div>
+    <button type="submit">Raise PR</button>
+  </form>
+</body>
+
+</html>

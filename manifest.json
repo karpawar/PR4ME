@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "PR4ME",
+  "version": "1.0",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  },
+  "description": "This is my awesome extension! to help you open all repos tabs with your branch configs",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "PR4ME"
+  }
+}
