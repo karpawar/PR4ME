@@ -15,6 +15,7 @@
     }
 
     h1 {
+      text-align: center;
       font-size: 24px;
       margin-bottom: 20px;
       color: #fff;
@@ -22,6 +23,11 @@
 
     .input-wrapper {
       min-width: 260px;
+    }
+
+    .button-wrapper {
+      display: flex;
+      flex-direction: row;
     }
 
     form {
@@ -62,6 +68,22 @@
       box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
     }
 
+    button[type="button"] {
+      background-color: #4c72ed;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      margin: 8px;
+    }
+
+    button[type="button"]:hover {
+      background-color: #324995;
+    }
+
     button[type="submit"] {
       background-color: #4CAF50;
       color: #fff;
@@ -71,6 +93,7 @@
       font-size: 16px;
       cursor: pointer;
       transition: all 0.2s ease;
+      margin: 8px;
     }
 
     button[type="submit"]:hover {
@@ -111,7 +134,10 @@
       <label for="repoLink">Repository Links:</label>
       <input type="text" id="repoLink" placeholder="Comma separated repository links">
     </div>
-    <button type="submit">Raise PR</button>
+    <div class="button-wrapper">
+      <button type="button" id="saveBtn">Save</button>
+      <button type="submit">Raise PR</button>
+    </div>
   </form>
 </body>
 
