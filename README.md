@@ -7,6 +7,7 @@ A simple utility chrome extension to help you raise and open PR compare tabs for
 2. Enable developer mode
 3. click "Load Unpacked" -> select the repository folder 
 
+![](https://raw.githubusercontent.com/karpawar/PR4ME/gif/usage.gif)
 
 
 # Steps 
